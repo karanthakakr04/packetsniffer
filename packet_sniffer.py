@@ -129,6 +129,9 @@ try:
 except IOError:
     print("\nAn IOError occurred while writing to the file")
     sys.exit()
+except KeyboardInterrupt:
+    print("User interrupted the execution, exiting...")
+    sys.exit()
 except Exception as error:
     print(f"\nAn exception occurred {error}")
     sys.exit()
