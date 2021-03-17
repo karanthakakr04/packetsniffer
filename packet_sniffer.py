@@ -27,11 +27,11 @@ Python logging levels in descending order of importance:
     ------------------------------------
     |     Level     |   Numeric Value  |
     ------------------------------------
-    |    CRITICAL 	|        50        |
-    |    ERROR 	    |        40        |
-    |    WARNING 	|        30        |
-    |    INFO 	    |        20        |
-    |    DEBUG 	    |        10        |
+    |    CRITICAL   |        50        |
+    |    ERROR      |        40        |
+    |    WARNING    |        30        |
+    |    INFO	    |        20        |
+    |    DEBUG      |        10        |
     ------------------------------------
 """
 
