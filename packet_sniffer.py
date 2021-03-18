@@ -73,7 +73,7 @@ except subprocess.CalledProcessError as error:
 else:
     # Executed if the try clause does not raise an exception
     print(f'\nInterface {interface} was set to PROMISC mode.\n')
-# print(interface)
+# print(interface)  # TODO: remove after testing
 
 # Asking the user for the number of packets to sniff (the 'count' parameter)
 try:
@@ -92,7 +92,7 @@ else:
         print(f'\nThe program will capture {pkt_count} packets.\n')
     else:  # this will execute only if the pkt_count is `0`
         print('\nThe program will capture packets until the timeout expires.\n')
-# print(pkt_count)
+# print(pkt_count)  # TODO: remove after testing
 
 # Asking the user for the time interval to sniff (the 'timeout' parameter)
 try:
@@ -107,7 +107,7 @@ else:
         sys.exit()
     else:  # executes when timeout is a positive whole number
         print(f'\nThe program will capture packets for {pcap_timeout} seconds.\n')
-# print(pcap_timeout)
+# print(pcap_timeout)  # TODO: remove after testing
 
 # Asking the user for any protocol filter he/she might want to apply to the sniffing process
 # I chose four protocols: ARP, BOOTP, ICMP, and DNS
@@ -119,7 +119,7 @@ elif protocol == '0':
 else:
     print('\nERROR: input does not match any of these (arp | bootp | icmp | dns | 0 - is all)')
     sys.exit()
-# print(protocol)
+# print(protocol)  # TODO: remove after testing
 
 try:
     # Asking the user to enter the name and path of the log file to be created
